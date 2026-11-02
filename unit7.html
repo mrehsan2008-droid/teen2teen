@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Unit 7 — Home & Classroom | TEEN2TEEN Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+</head>
+<body data-unit="7">
+  <div class="bg-animation"></div>
+  <canvas id="confetti"></canvas>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">T2T</div>
+        <div>
+          <div class="logo-text">TEEN2TEEN Hub</div>
+          <span class="logo-sub">Practice • Learn • Shine</span>
+        </div>
+      </a>
+      <nav>
+        <a href="unit5.html" class="nav-btn">Unit 5</a>
+        <a href="unit6.html" class="nav-btn">Unit 6</a>
+        <a href="unit7.html" class="nav-btn active">Unit 7</a>
+        <a href="unit8.html" class="nav-btn">Unit 8</a>
+        <a href="vocab.html" class="nav-btn">Vocab</a>
+      </nav>
+      <div class="teacher-badge">👩‍🏫 Reyhaneh Tabasi</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+    <section class="unit-header glass">
+      <h1>Unit 7 — Home & Classroom</h1>
+      <p style="color: var(--text-muted); margin-top: 0.3rem;">Rooms • Furniture • Location • Classroom Rules</p>
+      <span class="badge">13 Questions</span>
+    </section>
+
+    <div class="qa-list">
+      <div class="qa-card glass">
+        <div class="qa-number">1</div>
+        <div class="question">What's your home like?</div>
+        <div class="answer">My home is beautiful and comfortable. It has three bedrooms.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What\'s your home like?', 'My home is beautiful and comfortable. It has three bedrooms.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: خونه‌ات چطوره؟</div>
+          <div class="a-fa">جواب: خونه‌ام قشنگ و راحته. سه تا اتاق خواب داره.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">2</div>
+        <div class="question">How many bathrooms are there in your house?</div>
+        <div class="answer">There are two bathrooms in my house.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('How many bathrooms are there in your house?', 'There are two bathrooms in my house.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: تو خونه‌ات چند تا حموم هست؟</div>
+          <div class="a-fa">جواب: تو خونه‌ام دو تا حموم هست.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">3</div>
+        <div class="question">Can you name two pieces of furniture in your kitchen/bedroom?</div>
+        <div class="answer">There is a table and a refrigerator in the kitchen.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('Can you name two pieces of furniture in your kitchen/bedroom?', 'There is a table and a refrigerator in the kitchen.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: می‌تونی دو تا وسیله تو آشپزخونه/اتاق خوابت نام ببری؟</div>
+          <div class="a-fa">جواب: تو آشپزخونه میز و یخچال هست.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">4</div>
+        <div class="question">What are different rooms in a house?</div>
+        <div class="answer">Living room, bedroom, kitchen, bathroom, and dining room.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What are different rooms in a house?', 'Living room, bedroom, kitchen, bathroom, and dining room.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: اتاق‌های مختلف یه خونه چیا هستن؟</div>
+          <div class="a-fa">جواب: اتاق نشیمن، اتاق خواب، آشپزخونه، حموم و اتاق ناهارخوری.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">5</div>
+        <div class="question">Is your pencil in your backpack? Where's my tablet?</div>
+        <div class="answer">Yes, it is.<br>Your tablet is on the desk.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('Is your pencil in your backpack? Where\'s my tablet?', 'Yes, it is. Your tablet is on the desk.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: مدادتو تو کوله‌پشتی‌اته؟ تبلت من کجاست؟</div>
+          <div class="a-fa">جواب: بله هست. تبلتت روی میزه.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">6</div>
+        <div class="question">What can you see on the door? Under the desk?</div>
+        <div class="answer">I can see a picture on the door. I can see a bag under the desk.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What can you see on the door? Under the desk?', 'I can see a picture on the door. I can see a bag under the desk.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: روی در چی می‌بینی؟ زیر میز چی؟</div>
+          <div class="a-fa">جواب: روی در یه عکس می‌بینم. زیر میز یه کیف می‌بینم.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">7</div>
+        <div class="question">Can you tell me where my book is?</div>
+        <div class="answer">It's on the table.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('Can you tell me where my book is?', 'It\'s on the table.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: می‌تونی بگی کتابم کجاست؟</div>
+          <div class="a-fa">جواب: روی میزه.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">8</div>
+        <div class="question">Where are your grandparents now?</div>
+        <div class="answer">They are at home.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('Where are your grandparents now?', 'They are at home.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: پدربزرگ و مادربزرگت الان کجان؟</div>
+          <div class="a-fa">جواب: اونا خونه هستن.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">9</div>
+        <div class="question">What are bad rules for a classroom?</div>
+        <div class="answer">Talking loudly, run, and using cellphones.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What are bad rules for a classroom?', 'Talking loudly, run, and using cellphones.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: قوانین بد برای کلاس چیا هستن؟</div>
+          <div class="a-fa">جواب: بلند حرف زدن، دویدن و استفاده از موبایل.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">10</div>
+        <div class="question">What do you say to a classmate who is very quiet?</div>
+        <div class="answer">Come on! Speak louder, please.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What do you say to a classmate who is very quiet?', 'Come on! Speak louder, please.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: به همکلاسی که خیلی ساکته چی می‌گی؟</div>
+          <div class="a-fa">جواب: بیا دیگه! لطفاً بلندتر حرف بزن.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">11</div>
+        <div class="question">What should we say to a classmate who speaks English in the class?</div>
+        <div class="answer">Great job! Keep speaking English.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What should we say to a classmate who speaks English in the class?', 'Great job! Keep speaking English.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: به همکلاسی که تو کلاس انگلیسی حرف می‌زنه باید چی بگیم؟</div>
+          <div class="a-fa">جواب: عالی بود! به حرف زدن انگلیسی ادامه بده.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">12</div>
+        <div class="question">If a person is using his/her cellphone in the class, you say ...</div>
+        <div class="answer">Please don't use your cellphone in class.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('If a person is using his/her cellphone in the class, you say ...', 'Please don\'t use your cellphone in class.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: اگه کسی تو کلاس موبایلش رو استفاده می‌کنه، می‌گی ...</div>
+          <div class="a-fa">جواب: لطفاً تو کلاس از موبایلت استفاده نکن.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">13</div>
+        <div class="question">What does your teacher say when you do your homework early?</div>
+        <div class="answer">Very good! Well done!</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What does your teacher say when you do your homework early?', 'Very good! Well done!', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: وقتی مشقت رو زود انجام می‌دی معلمت چی می‌گه؟</div>
+          <div class="a-fa">جواب: خیلی خوب! آفرین!</div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ai-section glass">
+      <div class="ai-header">
+        <h2>🤖 Practice with AI Teacher</h2>
+        <span class="ai-badge">LIVE</span>
+      </div>
+      <p class="ai-teacher">Teacher Reyhaneh is asking you a random question from this unit. Answer in English!</p>
+      
+      <div class="quiz-area">
+        <div class="quiz-question" id="quizQuestion">Loading question...</div>
+        <div class="quiz-input-wrap">
+          <input type="text" id="quizInput" class="quiz-input" placeholder="Type your answer here..." autocomplete="off">
+          <button class="quiz-btn btn-check" onclick="checkAnswer()">Check ✓</button>
+          <button class="quiz-btn btn-next" onclick="nextQuizQuestion()">Next →</button>
+          <button class="quiz-btn" style="background:linear-gradient(135deg,#64748b,#475569);color:white;" onclick="nextQuizQuestion()">Skip / Change Question</button>
+        </div>
+        <div id="quizFeedback" class="quiz-feedback"></div>
+        <div class="quiz-score" id="scoreDisplay">
+          <span class="score-item">Correct: <strong>0</strong></span>
+          <span class="score-item">Total: <strong>0</strong></span>
+        </div>
+        <p class="hint">💡 Tip: Press Enter to check. If you don't know the answer, click "Skip / Change Question".</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by <strong>Ehsan</strong> • Teacher: Reyhaneh Tabasi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

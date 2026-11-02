@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Unit 6 — Time & Dates | TEEN2TEEN Hub</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+</head>
+<body data-unit="6">
+  <div class="bg-animation"></div>
+  <canvas id="confetti"></canvas>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">T2T</div>
+        <div>
+          <div class="logo-text">TEEN2TEEN Hub</div>
+          <span class="logo-sub">Practice • Learn • Shine</span>
+        </div>
+      </a>
+      <nav>
+        <a href="unit5.html" class="nav-btn">Unit 5</a>
+        <a href="unit6.html" class="nav-btn active">Unit 6</a>
+        <a href="unit7.html" class="nav-btn">Unit 7</a>
+        <a href="unit8.html" class="nav-btn">Unit 8</a>
+        <a href="vocab.html" class="nav-btn">Vocab</a>
+      </nav>
+      <div class="teacher-badge">👩‍🏫 Reyhaneh Tabasi</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <a href="index.html" class="back-home">← Back to Home</a>
+
+    <section class="unit-header glass">
+      <h1>Unit 6 — Time & Dates</h1>
+      <p style="color: var(--text-muted); margin-top: 0.3rem;">Age • Months • Seasons • Schedule</p>
+      <span class="badge">10 Questions</span>
+    </section>
+
+    <div class="qa-list">
+      <div class="qa-card glass">
+        <div class="qa-number">1</div>
+        <div class="question">How old is your English teacher? Can you guess?</div>
+        <div class="answer">I think she is about thirty years old.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('How old is your English teacher? Can you guess?', 'I think she is about thirty years old.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: معلم انگلیسی‌ات چند سالشه؟ می‌تونی حدس بزنی؟</div>
+          <div class="a-fa">جواب: فکر می‌کنم حدود سی سالشه.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">2</div>
+        <div class="question">When's your mother's birthday?</div>
+        <div class="answer">My mother's birthday is in May.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('When\'s your mother\'s birthday?', 'My mother\'s birthday is in May.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: تولد مادرت کیه؟</div>
+          <div class="a-fa">جواب: تولد مادرم تو ماه مِی (اردیبهشت/خرداد) هست.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">3</div>
+        <div class="question">What's your favorite song?</div>
+        <div class="answer">My favorite song is a pop song.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What\'s your favorite song?', 'My favorite song is a pop song.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: آهنگ مورد علاقت چیه؟</div>
+          <div class="a-fa">جواب: آهنگ مورد علاقه‌ام یک آهنگ پاپ هست.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">4</div>
+        <div class="question">Name the seasons of the year.</div>
+        <div class="answer">Spring, summer, fall, and winter.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('Name the seasons of the year.', 'Spring, summer, fall, and winter.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: فصل‌های سال رو نام ببر.</div>
+          <div class="a-fa">جواب: بهار، تابستان، پاییز و زمستان.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">5</div>
+        <div class="question">What month comes after March?</div>
+        <div class="answer">April comes after March.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What month comes after March?', 'April comes after March.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: ماه بعد از مارچ چیه؟</div>
+          <div class="a-fa">جواب: آپریل بعد از مارچ میاد.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">6</div>
+        <div class="question">Name the months having 31/30/29 days.</div>
+        <div class="answer">31 days: January, March, May, July, August, October, and December.<br>30 days: April, June, September, and November.<br>29 days: February in a leap year.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('Name the months having 31/30/29 days.', '31 days: January, March, May, July, August, October, and December. 30 days: April, June, September, and November. 29 days: February in a leap year.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: ماه‌هایی که ۳۱ / ۳۰ / ۲۹ روز دارن رو نام ببر.</div>
+          <div class="a-fa">جواب: ۳۱ روزه: ژانویه، مارچ، مِی، جولای، آگوست، اکتبر و دسامبر.<br>۳۰ روزه: آپریل، ژوئن، سپتامبر و نوامبر.<br>۲۹ روزه: فوریه در سال کبیسه.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">7</div>
+        <div class="question">What months are in spring/summer/fall/winter?</div>
+        <div class="answer">Spring: March, April, and May.<br>Summer: June, July, and August.<br>Fall: September, October, and November.<br>Winter: December, January, and February.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What months are in spring/summer/fall/winter?', 'Spring: March, April, and May. Summer: June, July, and August. Fall: September, October, and November. Winter: December, January, and February.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: کدوم ماه‌ها تو بهار/تابستان/پاییز/زمستان هستن؟</div>
+          <div class="a-fa">جواب: بهار: مارچ، آپریل و مِی.<br>تابستان: ژوئن، جولای و آگوست.<br>پاییز: سپتامبر، اکتبر و نوامبر.<br>زمستان: دسامبر، ژانویه و فوریه.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">8</div>
+        <div class="question">What day is your next exam?</div>
+        <div class="answer">My next exam is on Monday.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What day is your next exam?', 'My next exam is on Monday.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: امتحان بعدی‌ات چه روزیه؟</div>
+          <div class="a-fa">جواب: امتحان بعدی‌ام دوشنبه‌ست.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">9</div>
+        <div class="question">What time does your math class start?</div>
+        <div class="answer">My math class starts at eight o'clock.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('What time does your math class start?', 'My math class starts at eight o\'clock.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: کلاس ریاضی‌ات ساعت چند شروع می‌شه؟</div>
+          <div class="a-fa">جواب: کلاس ریاضی‌ام ساعت هشت شروع می‌شه.</div>
+        </div>
+      </div>
+      <div class="qa-card glass">
+        <div class="qa-number">10</div>
+        <div class="question">Who's your favorite player?</div>
+        <div class="answer">My favorite player is Cristiano Ronaldo. He is a great football player.</div>
+        <div class="card-actions">
+          <button class="action-btn listen-btn" onclick="speakText('Who\'s your favorite player?', 'My favorite player is Cristiano Ronaldo. He is a great football player.', this)">🎧 Listen</button>
+          <button class="action-btn persian-btn" onclick="toggleCardPersian(this)">Show Persian</button>
+        </div>
+        <div class="persian">
+          <div class="q-fa">سوال: بازیکن مورد علاقت کیه؟</div>
+          <div class="a-fa">جواب: بازیکن مورد علاقه‌ام کریستیانو رونالدو است. اون یک بازیکن فوتبال عالی هست.</div>
+        </div>
+      </div>
+    </div>
+
+    <section class="ai-section glass">
+      <div class="ai-header">
+        <h2>🤖 Practice with AI Teacher</h2>
+        <span class="ai-badge">LIVE</span>
+      </div>
+      <p class="ai-teacher">Teacher Reyhaneh is asking you a random question from this unit. Answer in English!</p>
+      
+      <div class="quiz-area">
+        <div class="quiz-question" id="quizQuestion">Loading question...</div>
+        <div class="quiz-input-wrap">
+          <input type="text" id="quizInput" class="quiz-input" placeholder="Type your answer here..." autocomplete="off">
+          <button class="quiz-btn btn-check" onclick="checkAnswer()">Check ✓</button>
+          <button class="quiz-btn btn-next" onclick="nextQuizQuestion()">Next →</button>
+          <button class="quiz-btn" style="background:linear-gradient(135deg,#64748b,#475569);color:white;" onclick="nextQuizQuestion()">Skip / Change Question</button>
+        </div>
+        <div id="quizFeedback" class="quiz-feedback"></div>
+        <div class="quiz-score" id="scoreDisplay">
+          <span class="score-item">Correct: <strong>0</strong></span>
+          <span class="score-item">Total: <strong>0</strong></span>
+        </div>
+        <p class="hint">💡 Tip: Press Enter to check. If you don't know the answer, click "Skip / Change Question".</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by <strong>Ehsan</strong> • Teacher: Reyhaneh Tabasi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
